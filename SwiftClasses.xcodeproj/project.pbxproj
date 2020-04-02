@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D460D1372431A3D600D37F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460D1362431A3D600D37F97 /* AppDelegate.swift */; };
-		D460D13B2431A3D600D37F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460D13A2431A3D600D37F97 /* ViewController.swift */; };
 		D460D13E2431A3D600D37F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D460D13C2431A3D600D37F97 /* Main.storyboard */; };
 		D460D1402431A3D700D37F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D460D13F2431A3D700D37F97 /* Assets.xcassets */; };
 		D460D1432431A3D700D37F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D460D1412431A3D700D37F97 /* LaunchScreen.storyboard */; };
 		D460D14E2431A3D800D37F97 /* SwiftClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460D14D2431A3D800D37F97 /* SwiftClassesTests.swift */; };
 		D460D1592431A3D800D37F97 /* SwiftClassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460D1582431A3D800D37F97 /* SwiftClassesUITests.swift */; };
-		D460D1682431A40100D37F97 /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D460D1672431A40100D37F97 /* SynchronizedDictionary.swift */; };
-		D4F464F62432E5AA00C79397 /* CustomLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F464F52432E5AA00C79397 /* CustomLock.swift */; };
+		D4B0E6EB2435E4530012153D /* ThreadSafeStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6E72435E4530012153D /* ThreadSafeStrategy.swift */; };
+		D4B0E6EC2435E4530012153D /* GCDStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6E82435E4530012153D /* GCDStrategy.swift */; };
+		D4B0E6ED2435E4530012153D /* CustomLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6E92435E4530012153D /* CustomLock.swift */; };
+		D4B0E6EE2435E4530012153D /* LockStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6EA2435E4530012153D /* LockStrategy.swift */; };
+		D4B0E6F02435E4650012153D /* SynchronizedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6EF2435E4650012153D /* SynchronizedDictionary.swift */; };
+		D4B0E6F22435E48F0012153D /* TestSynchronizedDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0E6F12435E48F0012153D /* TestSynchronizedDictionaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		D460D1332431A3D600D37F97 /* SwiftClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460D1362431A3D600D37F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D460D13A2431A3D600D37F97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D460D13D2431A3D600D37F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D460D13F2431A3D700D37F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D460D1422431A3D700D37F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,8 +51,12 @@
 		D460D1542431A3D800D37F97 /* SwiftClassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftClassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D460D1582431A3D800D37F97 /* SwiftClassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClassesUITests.swift; sourceTree = "<group>"; };
 		D460D15A2431A3D800D37F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D460D1672431A40100D37F97 /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
-		D4F464F52432E5AA00C79397 /* CustomLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLock.swift; sourceTree = "<group>"; };
+		D4B0E6E72435E4530012153D /* ThreadSafeStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeStrategy.swift; sourceTree = "<group>"; };
+		D4B0E6E82435E4530012153D /* GCDStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDStrategy.swift; sourceTree = "<group>"; };
+		D4B0E6E92435E4530012153D /* CustomLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLock.swift; sourceTree = "<group>"; };
+		D4B0E6EA2435E4530012153D /* LockStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockStrategy.swift; sourceTree = "<group>"; };
+		D4B0E6EF2435E4650012153D /* SynchronizedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynchronizedDictionary.swift; sourceTree = "<group>"; };
+		D4B0E6F12435E48F0012153D /* TestSynchronizedDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSynchronizedDictionaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,8 @@
 		D460D1352431A3D600D37F97 /* SwiftClasses */ = {
 			isa = PBXGroup;
 			children = (
-				D460D1662431A3EB00D37F97 /* SynchronizedDictionary */,
+				D4B0E6E32435E42D0012153D /* SynchronizedDictionary */,
 				D460D1362431A3D600D37F97 /* AppDelegate.swift */,
-				D460D13A2431A3D600D37F97 /* ViewController.swift */,
 				D460D13C2431A3D600D37F97 /* Main.storyboard */,
 				D460D13F2431A3D700D37F97 /* Assets.xcassets */,
 				D460D1412431A3D700D37F97 /* LaunchScreen.storyboard */,
@@ -130,13 +135,25 @@
 			path = SwiftClassesUITests;
 			sourceTree = "<group>";
 		};
-		D460D1662431A3EB00D37F97 /* SynchronizedDictionary */ = {
+		D4B0E6E32435E42D0012153D /* SynchronizedDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				D460D1672431A40100D37F97 /* SynchronizedDictionary.swift */,
-				D4F464F52432E5AA00C79397 /* CustomLock.swift */,
+				D4B0E6E62435E4480012153D /* ThreadSafeStrategy */,
+				D4B0E6EF2435E4650012153D /* SynchronizedDictionary.swift */,
+				D4B0E6F12435E48F0012153D /* TestSynchronizedDictionaryViewController.swift */,
 			);
 			path = SynchronizedDictionary;
+			sourceTree = "<group>";
+		};
+		D4B0E6E62435E4480012153D /* ThreadSafeStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				D4B0E6E92435E4530012153D /* CustomLock.swift */,
+				D4B0E6E82435E4530012153D /* GCDStrategy.swift */,
+				D4B0E6EA2435E4530012153D /* LockStrategy.swift */,
+				D4B0E6E72435E4530012153D /* ThreadSafeStrategy.swift */,
+			);
+			path = ThreadSafeStrategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D460D13B2431A3D600D37F97 /* ViewController.swift in Sources */,
-				D460D1682431A40100D37F97 /* SynchronizedDictionary.swift in Sources */,
-				D4F464F62432E5AA00C79397 /* CustomLock.swift in Sources */,
 				D460D1372431A3D600D37F97 /* AppDelegate.swift in Sources */,
+				D4B0E6EB2435E4530012153D /* ThreadSafeStrategy.swift in Sources */,
+				D4B0E6EC2435E4530012153D /* GCDStrategy.swift in Sources */,
+				D4B0E6ED2435E4530012153D /* CustomLock.swift in Sources */,
+				D4B0E6EE2435E4530012153D /* LockStrategy.swift in Sources */,
+				D4B0E6F22435E48F0012153D /* TestSynchronizedDictionaryViewController.swift in Sources */,
+				D4B0E6F02435E4650012153D /* SynchronizedDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
